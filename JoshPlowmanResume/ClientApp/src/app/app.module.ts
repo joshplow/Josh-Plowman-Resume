@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SimpleResumeComponent } from './simple-resume/simple-resume.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,12 @@ import { SimpleResumeComponent } from './simple-resume/simple-resume.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'simple-resume', component: SimpleResumeComponent }
-    ])
+      /*{ path: 'counter', component: CounterComponent },
+      { path: 'fetch-data', component: FetchDataComponent },*/
+      { path: 'resume', component: SimpleResumeComponent }
+    ]),
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
