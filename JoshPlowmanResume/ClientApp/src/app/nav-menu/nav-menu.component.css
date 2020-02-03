@@ -3,6 +3,9 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
+navbar-custom {
+  background-color: #300548;
+}
 
 html {
   font-size: 14px;
