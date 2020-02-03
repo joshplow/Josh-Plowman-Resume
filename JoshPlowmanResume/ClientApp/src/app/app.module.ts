@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SimpleResumeComponent } from './simple-resume/simple-resume.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { ResponsiveResumeComponent } from './responsive-resume/responsive-resume.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatCardModule } from '@angular/material/card';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    SimpleResumeComponent
+    SimpleResumeComponent,
+    ResponsiveResumeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
